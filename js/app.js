@@ -1,18 +1,22 @@
-const body = document.getElementsByTagName("body ") [0]
-const header = document.getElementsByName("header") [0]
-const nav= document.getElementsByName("nav ul") [0]
-const ul = document.getElementsByName(" ul") [0]
-const main = document.getElementsByName("main") [0]
-const section = document.getElementsByName("section") [0]
-const footer = document.getElementsByName("footer") [0]
+function showConfirmation(event) {
+    event.preventDefault(); // Evita el envío por defecto del formulario
+    const name = document.getElementById('name').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+    const numberPeople = document.getElementById('numberPeople').value;
 
-body.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el body")})
+    const confirmationMessage = `Reservation confirmed!\n\nName: ${name}\nLast Name: ${lastName}\nEmail: ${email}\nDate: ${date}\nNumber of People: ${numberPeople}`;
+    alert(confirmationMessage);
+}
+function mostrarConfimacion(event) {
+    event.preventDefault(); // Evita el envío por defecto del formulario
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const fecha = document.getElementById('fecha').value;
+    const num_personas = document.getElementById('num_personas').value;
 
-header.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el header")})
-
-nav.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el nav")})
-
-ul.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el ul")})
-ul.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el ul")})
-main.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el main")})
-footer.addEventListener("click", () =>{crossOriginIsolated.log("se hizo clic en el footer")})
+    const confirmationMessage = `Reservacion confirmada!\n\nnombre: ${nombre}\napellido: ${apellido}\ncorreo: ${correo}\nfecha: ${fecha}\nNúmero de Personas: ${num_personas}`;
+    alert(confirmationMessage);
+}
