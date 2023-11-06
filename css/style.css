@@ -1,0 +1,54 @@
+body, ul, li, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #b63997;
+  }
+  
+  header {
+    background-color: palevioletred;
+    color: blue;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: purple;
+    color: white;
+  }
+  .card {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightcoral;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+  }

@@ -1,0 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Booking confirmation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="confirmation.html">                
+                Confirmation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Form to schedule a reservation</h1>
+            <form action="procesar_reserva.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br> 
+                <br>
+
+                <label for="Last name">Last name:</label>
+                <input type="text" id="Last name" name="Last name" required> 
+                <br><br>
+
+                <label for="Mail">Mail:</label>
+                <input type="email" id="Mail" name="Mail" required><br> 
+                <br>
+
+                <label for="Date">Date:</label>
+                <input type="date" id="Date" name="Date" required><br><br>
+
+                <label for="number_people">number_people:</label>
+                <input type="number_people" id="number_people" 
+                name="number_people" 
+                required><br><br>
+
+                <input type="submit" value="Confirm reservationa">
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Doris's Kitchen</p>
+    </footer>
+
+           
+</body>
+
+</html>
